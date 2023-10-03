@@ -31,14 +31,13 @@ namespace Containers_and_layout
             {
                 string colorName = button.Content.ToString();
 
-                // Устанавливаем фоновый цвет окна на основе текста кнопки
                 try
                 {
                     this.Background = (Brush)new BrushConverter().ConvertFromString(colorName);
                 }
                 catch
                 {
-                    // В случае ошибки преобразования (например, текст кнопки не является допустимым цветом), вы можете обработать это здесь
+                    
                 }
             }
         }
